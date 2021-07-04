@@ -1,0 +1,12 @@
+{
+  "name": "test_task",
+  "private": true,
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:css/style.css"
+  },
+  "author": "Vadim Bobrovitsky",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}

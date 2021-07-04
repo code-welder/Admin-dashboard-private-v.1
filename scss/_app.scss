@@ -1,0 +1,21 @@
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-grid {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(100px, 150px) 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "sidebar chat";
+
+  @include media-md {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "chat";
+  }
+}

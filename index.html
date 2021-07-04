@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- *** Fonts *** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ***  ***  *** -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Chat</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="main-grid">
+        <div class="sidebar-menu media-disp-none--991">
+
+            <div class="sidebar-menu__logo fl-center">
+              <img src="./assets/img/Logo.png" alt="Logo" />
+            </div>
+            <nav class="navbar">
+              <ul class="navbar__list overflow-y-scroll no-scrollbar">
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="
+                        navbar__icon
+                        menu-item__icon menu-item__icon--dashboard
+                      "
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Dashboard</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="
+                        navbar__icon
+                        menu-item__icon menu-item__icon--e-commerce
+                      "
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">E-Commerce</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="
+                        navbar__icon
+                        menu-item__icon menu-item__icon--calendar
+                      "
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Calendar</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="navbar__icon menu-item__icon menu-item__icon--mail"
+                    ></div>
+                    <div class="icon icon--notify navbar__notify-icon">4</div>
+                  </div>
+                  <div class="menu-item__name">Mail</div>
+                </li>
+                <li class="navbar__item navbar__item--active menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="navbar__icon menu-item__icon menu-item__icon--chat"
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Chat</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="navbar__icon menu-item__icon menu-item__icon--tasks"
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Tasks</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="
+                        navbar__icon
+                        menu-item__icon menu-item__icon--projects
+                      "
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Projects</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="
+                        navbar__icon
+                        menu-item__icon menu-item__icon--file-manager
+                      "
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">File Manager</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="navbar__icon menu-item__icon menu-item__icon--notes"
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Notes</div>
+                </li>
+                <li class="navbar__item menu-item">
+                  <div class="menu-item__icon-wrapper mb-16">
+                    <div
+                      class="
+                        navbar__icon
+                        menu-item__icon menu-item__icon--contacts
+                      "
+                    ></div>
+                  </div>
+                  <div class="menu-item__name">Contacts</div>
+                </li>
+              </ul>
+            </nav>
+
+        </div>
+
+        <div class="chat">
+          <div class="chat__grid">
+            <div class="chat__search media-disp-none--767">
+              <input type="search" class="chat-search" placeholder="Search..." />
+            </div>
+            <div class="chat__header chat-header px-30">
+              <div class="chat-header__user fl-center">
+                <div class="user-avatar user-avatar--online">
+                  <img
+                    src="./assets/img/User_avatars/Jane.png"
+                    alt="user avatar"
+                  />
+                </div>
+                <div class="user-name ml-16">Jane Wilson</div>
+              </div>
+              <div class="chat-header__icons fl-center">
+                <div class="icon icon--plus mr-20"></div>
+                <div class="icon icon--dots"></div>
+              </div>
+            </div>
+            <div class="chat__lists chat-lists media-disp-none--767">
+              <div class="chat-lists__categories overflow-y-scroll no-scrollbar">
+                <div class="chat-lists__inner">
+                  <div class="chat-lists__title px-24 mt-20">
+                    TEAMS
+                    <div class="icon icon--plus"></div>
+                  </div>
+                  <ul class="chat-list">
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar">
+                        <img
+                          src="./assets/img/User_avatars/Managers.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">#Managers</div>
+                        <div class="dialog-preview__text">
+                          Hello, Mark! I am writing to invite
+                        </div>
+                      </div>
+                    </li>
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar">
+                        <img
+                          src="./assets/img/User_avatars/Designers.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">#Designers</div>
+                        <div class="dialog-preview__text">
+                          Hello. Can you drop the photos
+                        </div>
+                      </div>
+                      <div class="icon icon--notify dialog-preview__notify">
+                        4
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="chat-lists__inner">
+                  <div class="chat-lists__title px-24 mt-20">
+                    PEOPLE
+                    <div class="icon icon--plus"></div>
+                  </div>
+                  <ul class="chat-list">
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar user-avatar--online">
+                        <img
+                          src="./assets/img/User_avatars/Dustin.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">
+                          Dustin Williamson
+                        </div>
+                        <div class="dialog-preview__text">
+                          Hello, Mark! I am writing to invite
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar">
+                        <img
+                          src="./assets/img/User_avatars/Jane.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">Jane Wilson</div>
+                        <div class="dialog-preview__text">
+                          We use the Arts as a means of
+                        </div>
+                      </div>
+                      <div class="icon icon--notify dialog-preview__notify">
+                        4
+                      </div>
+                    </li>
+
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar user-avatar--online">
+                        <img
+                          src="./assets/img/User_avatars/Regina.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">Regina Cooper</div>
+                        <div class="dialog-preview__text">
+                          The Arts play a large role in our
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar user-avatar--online">
+                        <img
+                          src="./assets/img/User_avatars/Brandan.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">Brandon Pena</div>
+                        <div class="dialog-preview__text">
+                          The arts allow us to be as we are
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar">
+                        <img
+                          src="./assets/img/User_avatars/Jacob.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">Jacob Hawkins</div>
+                        <div class="dialog-preview__text">
+                          From dance and music to a new
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar user-avatar--online">
+                        <img
+                          src="./assets/img/User_avatars/Shane.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">Shane Black</div>
+                        <div class="dialog-preview__text">
+                          The Arts teach us how to connect
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="chat-list__item dialog-preview px-24">
+                      <div class="user-avatar user-avatar--online">
+                        <img
+                          src="./assets/img/User_avatars/Priscilla.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="dialog-preview__inner ml-16">
+                        <div class="dialog-preview__name">
+                          Priscilla Edwards
+                        </div>
+                        <div class="dialog-preview__text">
+                          Concept of life is shown through
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="chat__messages chat-messages">
+              <div class="chat-messages__history overflow-y-scroll no-scrollbar">
+
+                <ul class="chat-messages__list">
+
+                  <li class="chat-message income-message">
+
+                    <div class="chat-message__avatar user-avatar">
+                      <img src="./assets/img/User_avatars/Jane.png" alt="user avatar">
+                    </div>
+
+                    <div class="chat-message__text">
+                      Hi Cody, any progress on the project?<i class="emoji emoji--happy-3"></i>
+                    </div>
+
+                    <div class="chat-message__options chat-message__options--close">
+                      <div class="icon icon--dots chat-message__option chat-message__option--more"></div>
+                      <div class="icon icon--delete chat-message__option chat-message__option--delete"></div>
+                    </div>
+
+                    <div class="chat-message__date">
+                      1 day ago
+                    </div>
+                  </li>
+
+                  <li class="chat-message own-message">
+
+                    <div class="chat-message__avatar user-avatar">
+                      <img src="./assets/img/User_avatars/Shane.png" alt="user avatar">
+                    </div>
+
+                    <div class="chat-message__text">
+                      Hi Jane!<br>
+                      Yes. I just finished developing the "Chat" template.
+                    </div>
+
+                    <div class="chat-message__options chat-message__options--close">
+                      <div class="icon icon--dots chat-message__option chat-message__option--more"></div>
+                      <div class="icon icon--edit chat-message__option chat-message__option--edit"></div>
+                      <div class="icon icon--delete chat-message__option chat-message__option--delete"></div>
+                    </div>
+
+                    <div class="chat-message__date">
+                      1 day ago
+                    </div>
+
+                    <div class="chat-message__attachments">
+                      <div class="chat-message__images">
+                        <img src="./assets/img/msgs_attachments/1.png">
+                        <img src="./assets/img/msgs_attachments/2.png">
+                        <img src="./assets/img/msgs_attachments/3.png">
+                        <button class="btn--secondary chat-message__btn-more-imgs">+3</button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="chat-message income-message">
+
+                    <div class="chat-message__avatar user-avatar">
+                      <img src="./assets/img/User_avatars/Jane.png" alt="user avatar">
+                    </div>
+
+                    <div class="chat-message__text">
+                      It looks amazing. <i class="emoji emoji--nerd"></i><br>
+                      The customer will be very satisfied.
+                    </div>
+
+                    <div class="chat-message__options chat-message__options--close">
+                      <div class="icon icon--dots chat-message__option chat-message__option--more"></div>
+                      <div class="icon icon--delete chat-message__option chat-message__option--delete"></div>
+                    </div>
+
+                    <div class="chat-message__date">
+                      1 day ago
+                    </div>
+                  </li>
+
+                  <li class="chat-message own-message">
+
+                    <div class="chat-message__avatar user-avatar">
+                      <img src="./assets/img/User_avatars/Shane.png" alt="user avatar">
+                    </div>
+
+                    <div class="chat-message__text">
+                      Thank you, glad you liked it.<br>
+                      Send me Styles Guide.
+                    </div>
+
+                    <div class="chat-message__options chat-message__options--open">
+                      <div class="icon icon--dots chat-message__option chat-message__option--more"></div>
+                      <div class="icon icon--edit chat-message__option chat-message__option--edit"></div>
+                      <div class="icon icon--delete chat-message__option chat-message__option--delete"></div>
+                    </div>
+
+                    <div class="chat-message__date">
+                      1 day ago
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="chat-messages__date-breakline">
+                  <span>Today</span>
+                </div>
+
+                <ul class="chat-messages__list">
+
+                  <li class="chat-message income-message">
+
+                    <div class="chat-message__avatar user-avatar">
+                      <img src="./assets/img/User_avatars/Jane.png" alt="user avatar">
+                    </div>
+
+                    <div class="chat-message__options chat-message__options--close">
+                      <div class="icon icon--dots chat-message__option chat-message__option--more"></div>
+                      <div class="icon icon--delete chat-message__option chat-message__option--delete"></div>
+                    </div>
+
+                    <div class="chat-message__date">
+                      2 min ago
+                    </div>
+
+                    <div class="chat-message__download-file">
+                      <div class="chat-message__file-info">
+                        Brand Styles Guide.pdf
+                        <span class="chat-message__file-size">478 KB</span>
+                      </div>
+                      <button class="btn--primary chat-message__download-btn">
+                        Download
+                        <div class="icon icon--download"></div>
+                      </button>
+                    </div>
+                  </li>
+
+                  <li class="chat-message own-message">
+
+                    <div class="chat-message__avatar user-avatar">
+                      <img src="./assets/img/User_avatars/Shane.png" alt="user avatar">
+                    </div>
+
+                    <div class="chat-message__text">
+                      I'll see later
+                    </div>
+
+                    <div class="chat-message__options chat-message__options--close">
+                      <div class="icon icon--dots chat-message__option chat-message__option--more"></div>
+                      <div class="icon icon--edit chat-message__option chat-message__option--edit"></div>
+                      <div class="icon icon--delete chat-message__option chat-message__option--delete"></div>
+                    </div>
+
+                    <div class="chat-message__date">
+                      1 min ago
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="chat-messages__message-input">
+                <div class="message-input">
+                  <div class="message-input__options">
+                    <div class="icon icon--attachments message-input__option"></div>
+                    <div class="icon icon--emoji message-input__option"></div>
+                  </div>
+
+                  <div class="message-input__text">
+                    <textarea class="message-input__textarea no-scrollbar" rows="2" placeholder="Type a message here..."></textarea>
+                  </div>
+
+                  <button class="message-input__send-btn btn--primary" type="button">
+                    <div class="icon icon--send"></div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

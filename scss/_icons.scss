@@ -1,0 +1,51 @@
+.icon {
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+  &--notify {
+    background-color: $Red;
+    color: $White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--plus {
+    background-image: url('../assets/icons/plus.svg');
+  }
+
+  &--dots {
+    background-image: url('../assets/icons/dots.svg');
+  }
+
+  &--search {
+    background-image: url('../assets/icons/search.svg');
+  }
+
+  &--edit {
+    background-image: url('../assets/icons/edit.svg');
+  }
+
+  &--delete {
+    background-image: url('../assets/icons/delete.svg');
+  }
+
+  &--attachments {
+    background-image: url('../assets/icons/attachment.svg');
+  }
+
+  &--emoji {
+    background-image: url('../assets/icons/emoji.svg');
+  }
+
+  &--send {
+    background-image: url('../assets/icons/send.svg');
+  }
+
+  &--download {
+    background-image: url('../assets/icons/download.svg');
+  }
+}
